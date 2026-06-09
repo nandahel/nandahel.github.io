@@ -1297,22 +1297,66 @@ section {
   color: #728394;
 }
 
-.services .icon-box-wide {
+.services .service-details {
   text-align: left;
+  margin-top: 12px;
 }
 
-.services .icon-box-wide h4 {
-  text-align: center;
+.services .service-details p {
+  margin-bottom: 10px;
 }
 
-.services .icon-box-wide ul {
+.services .service-details p:last-child {
+  margin-bottom: 0;
+}
+
+.services .service-details ul {
   padding-left: 20px;
   font-size: 14px;
   line-height: 24px;
+  margin-bottom: 10px;
 }
 
-.services .icon-box-wide ul li {
+.services .service-details ul li {
   margin-bottom: 5px;
+}
+
+.btn-saiba-mais {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 12px;
+  color: #0563bb;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-saiba-mais:hover {
+  color: #0678e3;
+}
+
+.btn-saiba-mais .more,
+.btn-saiba-mais .less {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.btn-saiba-mais i {
+  font-size: 18px;
+}
+
+.btn-saiba-mais .less {
+  display: none;
+}
+
+.btn-saiba-mais[aria-expanded="true"] .more {
+  display: none;
+}
+
+.btn-saiba-mais[aria-expanded="true"] .less {
+  display: inline-flex;
 }
 
 .contact .contact-map {
