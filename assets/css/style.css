@@ -421,9 +421,33 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  color: #728394;
+  font-size: 28px;
+  color: #45505b;
+  margin-bottom: 5px;
+}
+
+.about .content .about-subtitle {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #0563bb;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #eef2f5;
+}
+
+.about .about-img {
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(69, 80, 91, 0.18);
+}
+
+@media (min-width: 992px) {
+  .about .content {
+    padding-left: 40px;
+  }
 }
 
 .about .content ul {
@@ -451,6 +475,11 @@ section {
 .about .content p {
   font-size: 17px;
   line-height: 1.8;
+  text-align: justify;
+}
+
+.about .content p strong {
+  color: #45505b;
 }
 
 .about .content p:last-child {
@@ -1321,6 +1350,10 @@ section {
 
   .section-title p {
     font-size: 17px;
+  }
+
+  .about .content p {
+    text-align: left;
   }
 }
 
