@@ -1285,15 +1285,16 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #25d366;
+  background: #209fe1;
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  letter-spacing: 0.5px;
   padding: 12px 28px;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 4px 12px rgba(69, 80, 91, 0.15);
 }
 
 .btn-agendar i {
@@ -1301,10 +1302,10 @@ section {
 }
 
 .btn-agendar:hover {
-  background: #1ebe5b;
+  background: #1b87bf;
   color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 6px 16px rgba(69, 80, 91, 0.2);
 }
 
 .big-quote {
