@@ -1233,3 +1233,92 @@ section {
   background-color: #ffffff91;
   padding: 25px;
 }
+/*--------------------------------------------------------------
+# Custom additions
+--------------------------------------------------------------*/
+.btn-agendar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25d366;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 28px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.btn-agendar i {
+  font-size: 22px;
+}
+
+.btn-agendar:hover {
+  background: #1ebe5b;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+.big-quote {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding: 20px 30px 0 30px;
+}
+
+.big-quote p {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #45505b;
+  margin-bottom: 15px;
+}
+
+.big-quote::before {
+  content: "\201C";
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 80px;
+  line-height: 0.6;
+  color: #0563bb;
+  margin-bottom: 10px;
+}
+
+.big-quote footer {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #728394;
+}
+
+.services .icon-box-wide {
+  text-align: left;
+}
+
+.services .icon-box-wide h4 {
+  text-align: center;
+}
+
+.services .icon-box-wide ul {
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.services .icon-box-wide ul li {
+  margin-bottom: 5px;
+}
+
+.contact .contact-map {
+  width: 100%;
+  min-height: 320px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+}
