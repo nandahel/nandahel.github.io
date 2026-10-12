@@ -18,15 +18,23 @@
 <meta name="twitter:card" content="summary_large_image">
 <link href="assets/img/favicon.png" rel="icon">
 <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-<link rel="preload" as="image" href="assets/img/site/hero-desktop.webp" media="(min-width:900px)">
-<link rel="preload" as="image" href="assets/img/site/hero-mobile.webp" media="(max-width:899px)">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTGEVSSJMR"></script>
+<link rel="preload" as="image" href="assets/img/site/hero-desktop.webp" media="(min-width:900px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/img/site/hero-mobile.webp" media="(max-width:899px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/figtree-latin.woff2" crossorigin>
+<!-- Google tag (gtag.js): carregado depois da página para não atrasar a renderização -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-RTGEVSSJMR');
+  window.addEventListener('load', function(){
+    setTimeout(function(){
+      var s=document.createElement('script');s.async=true;
+      s.src='https://www.googletagmanager.com/gtag/js?id=G-RTGEVSSJMR';
+      document.head.appendChild(s);
+    }, 1500);
+  });
 </script>
 <script type="application/ld+json">
 {
@@ -62,10 +70,10 @@
   ]
 }
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,500;112,700;112,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
+/* fontes locais (subconjunto latino); Archivo fixada na largura 112% */
+@font-face{font-family:"Archivo";font-style:normal;font-weight:500 800;font-stretch:112%;font-display:swap;src:url(assets/fonts/archivo-latin.woff2) format("woff2")}
+@font-face{font-family:"Figtree";font-style:normal;font-weight:400 600;font-display:swap;src:url(assets/fonts/figtree-latin.woff2) format("woff2")}
 :root{
   --white:#FFFFFF;
   /* cores do logo: roxo #4C2991, azul #209FE1, azul claro #81C5EE */
@@ -370,7 +378,7 @@ footer a{color:#fff}
 <section class="hero">
   <picture class="hero-bg">
     <source media="(min-width:900px)" srcset="assets/img/site/hero-desktop.webp">
-    <img src="assets/img/site/hero-mobile.webp" alt="Dra. Fernanda Vieira segurando o estetoscópio">
+    <img src="assets/img/site/hero-mobile.webp" fetchpriority="high" alt="Dra. Fernanda Vieira segurando o estetoscópio">
   </picture>
   <div class="wrap hero-text">
       <canvas class="ecg" aria-hidden="true"></canvas>
@@ -392,9 +400,9 @@ footer a{color:#fff}
     </div>
     <div class="mosaic js-wait">
       <figure class="m1"><img src="assets/img/site/who-corrida.webp" alt="Corredores amadores em prova de rua" loading="lazy"><figcaption>Corrida</figcaption></figure>
-      <figure class="m2"><img src="assets/img/site/who-triathlon.webp" alt="Triatletas pedalando" loading="lazy" style="object-position:center 30%"><figcaption>Triathlon</figcaption></figure>
+      <figure class="m2"><img src="assets/img/site/who-triathlon.webp" srcset="assets/img/site/who-triathlon-640.webp 640w, assets/img/site/who-triathlon.webp 900w" sizes="(max-width:960px) calc(100vw - 48px), 560px" alt="Triatletas pedalando" loading="lazy" style="object-position:center 30%"><figcaption>Triathlon</figcaption></figure>
       <figure class="m3"><img src="assets/img/site/who-ciclismo.webp" alt="Grupo de ciclistas amadores" loading="lazy"><figcaption>Ciclismo</figcaption></figure>
-      <figure class="m5"><img src="assets/img/site/who-hyrox.webp" alt="Atletas em prova de Hyrox" loading="lazy"><figcaption>Hyrox e funcional</figcaption></figure>
+      <figure class="m5"><img src="assets/img/site/who-hyrox.webp" srcset="assets/img/site/who-hyrox-640.webp 640w, assets/img/site/who-hyrox.webp 888w" sizes="(max-width:960px) calc(100vw - 48px), 560px" alt="Atletas em prova de Hyrox" loading="lazy"><figcaption>Hyrox e funcional</figcaption></figure>
       <figure class="m6"><img src="assets/img/site/who-musculacao.webp" alt="Treino de força com halteres" loading="lazy" style="object-position:center 35%"><figcaption>Musculação</figcaption></figure>
     </div>
     <ul class="who-list">
@@ -414,9 +422,9 @@ footer a{color:#fff}
     <h2>Como funciona a avaliação completa.</h2>
     <div class="steps-grid">
       <div class="step-photos">
-        <img class="big" src="assets/img/site/step-esteira.webp" alt="Paciente fazendo teste de esforço cardiopulmonar na esteira" loading="lazy">
-        <img class="sq" src="assets/img/site/step-calorimetria.webp" alt="Paciente fazendo calorimetria indireta em repouso" loading="lazy">
-        <img class="sq" src="assets/img/site/step-bioimpedancia.webp" alt="Paciente fazendo bioimpedância" loading="lazy">
+        <img class="big" src="assets/img/site/step-esteira.webp" srcset="assets/img/site/step-esteira-640.webp 640w, assets/img/site/step-esteira.webp 1300w" sizes="(max-width:960px) calc(100vw - 48px), 480px" alt="Paciente fazendo teste de esforço cardiopulmonar na esteira" loading="lazy">
+        <img class="sq" src="assets/img/site/step-calorimetria.webp" srcset="assets/img/site/step-calorimetria-640.webp 640w, assets/img/site/step-calorimetria.webp 1300w" sizes="(max-width:960px) calc(50vw - 30px), 240px" alt="Paciente fazendo calorimetria indireta em repouso" loading="lazy">
+        <img class="sq" src="assets/img/site/step-bioimpedancia.webp" srcset="assets/img/site/step-bioimpedancia-640.webp 640w, assets/img/site/step-bioimpedancia.webp 1040w" sizes="(max-width:960px) calc(50vw - 30px), 240px" alt="Paciente fazendo bioimpedância" loading="lazy">
       </div>
       <div>
         <ol class="steps">
@@ -486,7 +494,7 @@ footer a{color:#fff}
 
 <section class="tele">
   <div class="wrap tele-grid">
-    <img src="assets/img/site/telemedicina.webp" alt="Consulta por telemedicina com análise de eletrocardiograma" loading="lazy">
+    <img src="assets/img/site/telemedicina.webp" srcset="assets/img/site/telemedicina-640.webp 640w, assets/img/site/telemedicina.webp 1300w" sizes="(max-width:960px) calc(100vw - 48px), 540px" alt="Consulta por telemedicina com análise de eletrocardiograma" loading="lazy">
     <div>
       <h2>Também atendo online.</h2>
       <p class="lead">Para quem mora longe ou tem pouco tempo, a consulta pode ser feita por telemedicina.</p>
@@ -591,7 +599,7 @@ function beat(p){ /* p: 0..1 dentro do ciclo, retorna deslocamento -1..1 */
   return g(p,.22,.025,.12)-g(p,.33,.006,.12)+g(p,.35,.008,1)-g(p,.375,.009,.35)+g(p,.58,.045,.22);
 }
 function monitor(cv,opt){
-  var ctx=cv.getContext('2d'),W,H,ys,head=0,dpr=Math.min(window.devicePixelRatio||1,2);
+  var ctx=cv.getContext('2d'),W,H,ys,head=0,dpr=Math.min(window.devicePixelRatio||1,2),vis=false,raf=0;
   var period=opt.pxs*60/opt.bpm,gap=34,phase=0,last=0,acc=0;
   function size(){W=cv.clientWidth;H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);ys=new Float32Array(Math.ceil(W)+1).fill(NaN);head=0;}
   size();window.addEventListener('resize',size);
@@ -604,7 +612,7 @@ function monitor(cv,opt){
       phase++;head++;if(head>W){head=0;}
       for(var gg=1;gg<=gap;gg++){var gx=(Math.floor(head)+gg)%(ys.length);ys[gx]=NaN;}
     }
-    draw(Math.floor(head));requestAnimationFrame(step);
+    draw(Math.floor(head));raf=vis?requestAnimationFrame(step):0;
   }
   function draw(hd){
     ctx.clearRect(0,0,W,H);ctx.lineWidth=opt.lw||2.4;ctx.lineJoin='round';ctx.lineCap='butt';
@@ -616,7 +624,9 @@ function monitor(cv,opt){
     }
     if(hd>=0&&!isNaN(ys[hd-1])){var yy=ys[hd-1];ctx.beginPath();ctx.arc(hd-1,yy,opt.r||4,0,7);ctx.fillStyle=opt.dot||'#209FE1';ctx.shadowColor='#81C5EE';ctx.shadowBlur=14;ctx.fill();ctx.shadowBlur=0;}
   }
-  requestAnimationFrame(step);
+  function play(){if(vis&&!raf){last=0;raf=requestAnimationFrame(step);}}
+  if('IntersectionObserver' in window){new IntersectionObserver(function(e){vis=e[0].isIntersecting;play();}).observe(cv);}else{vis=true;play();}
+  document.addEventListener('visibilitychange',function(){if(document.hidden){cancelAnimationFrame(raf);raf=0;}else play();});
 }
 var e1=document.querySelector('.ecg');if(e1)monitor(e1,{pxs:230,bpm:80,base:.7,amp:.6,rgb:'129,197,238',dot:'#FFFFFF',lw:1.6,r:2.6});
 var e2=document.querySelector('.ecg-inline');if(e2)monitor(e2,{pxs:360,bpm:80,base:.7,amp:.62});
