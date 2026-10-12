@@ -1,484 +1,626 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dra. Fernanda Vieira | Medicina do Exercício e do Esporte em São José dos Campos</title>
+<meta name="description" content="Avaliação completa em Medicina do Exercício e do Esporte com teste de esforço cardiopulmonar, calorimetria indireta, bioimpedância e ECG. São José dos Campos e telemedicina.">
+<link rel="canonical" href="https://www.fernandavieira.med.br/">
+<meta name="theme-color" content="#1E1A4D">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.fernandavieira.med.br/">
+<meta property="og:title" content="Dra. Fernanda Vieira | Medicina do Exercício e do Esporte">
+<meta property="og:description" content="Treine com os números do seu corpo. Avaliação completa com teste de esforço cardiopulmonar, calorimetria indireta, bioimpedância e ECG em São José dos Campos.">
+<meta property="og:image" content="https://www.fernandavieira.med.br/assets/img/site/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<link href="assets/img/favicon.png" rel="icon">
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+<link rel="preload" as="image" href="assets/img/site/hero-desktop.webp" media="(min-width:900px)">
+<link rel="preload" as="image" href="assets/img/site/hero-mobile.webp" media="(max-width:899px)">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTGEVSSJMR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTGEVSSJMR');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Dra. Fernanda Helena da Silva Vieira",
+  "image": "https://www.fernandavieira.med.br/assets/img/site/og-image.jpg",
+  "url": "https://www.fernandavieira.med.br/",
+  "email": "contato@fernandavieira.med.br",
+  "telephone": "+5512991674600",
+  "medicalSpecialty": ["Medicina do Exercício e do Esporte"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Fernão Dias, 196 - Jardim Nova América",
+    "addressLocality": "São José dos Campos",
+    "addressRegion": "SP",
+    "postalCode": "12242-580",
+    "addressCountry": "BR"
+  },
+  "sameAs": ["https://www.instagram.com/dra_fervieira/"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Preciso ser atleta para fazer a avaliação?", "acceptedAnswer": {"@type": "Answer", "text": "Não. A maior parte dos pacientes são pessoas que querem começar a se exercitar ou que treinam por saúde. A avaliação mostra onde você está e como evoluir."}},
+    {"@type": "Question", "name": "Quanto tempo dura a avaliação completa?", "acceptedAnswer": {"@type": "Answer", "text": "De 1h30 a 2h, com consulta e todos os exames no mesmo atendimento."}},
+    {"@type": "Question", "name": "Você acompanha doenças do coração?", "acceptedAnswer": {"@type": "Answer", "text": "Não faço acompanhamento cardiológico de doenças cardíacas, exceto as relacionadas ao esporte. Se você já tem uma condição cardíaca em tratamento, siga com seu cardiologista."}},
+    {"@type": "Question", "name": "Posso fazer só a consulta ou só um exame?", "acceptedAnswer": {"@type": "Answer", "text": "Pode. Consulta, teste de esforço cardiopulmonar e calorimetria indireta também são feitos separadamente."}},
+    {"@type": "Question", "name": "A consulta online substitui os exames?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Os exames são presenciais. Pela telemedicina, faço a consulta clínica, retornos e análise de exames que você já tem."}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,500;112,700;112,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#FFFFFF;
+  /* cores do logo: roxo #4C2991, azul #209FE1, azul claro #81C5EE */
+  --ice:#EEF6FC;
+  --line:#D5E6F3;
+  --ink:#1E1A4D;
+  --ink-rgb:30,26,77;
+  --ink-soft:#4E4A70;
+  --on-ink:#C3C1DE;
+  --brand:#209FE1;
+  --brand-light:#81C5EE;
+  --purple:#4C2991;
+  --blue:#0E74B4;      /* azul do logo escurecido: texto branco com contraste AA */
+  --blue-deep:#0A5C91;
+  --z1:#CDE8F8;--z2:#81C5EE;--z3:#209FE1;--z4:#0E74B4;--z5:#4C2991;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--body);color:var(--ink);background:var(--white);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+::selection{background:var(--z1);color:var(--ink)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-stretch:112%;line-height:1.05;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4.4vw,48px);font-weight:800;max-width:18ch}
+h3{font-size:21px;font-weight:700}
+.lead{font-size:19px;color:var(--ink-soft);max-width:56ch}
+section{padding:104px 0}
 
-    <title>Dra. Fernanda Vieira | Medicina do Esporte e Cardiologia Pediátrica - São José dos Campos</title>
-    <meta content="Dra. Fernanda Vieira - Médica do Esporte e Cardiologista Pediátrica em São José dos Campos. Teste cardiopulmonar (ergoespirometria), calorimetria indireta, bioimpedância e atendimento personalizado para saúde e performance." name="description">
-    <meta content="medicina do esporte, médica do esporte, ergoespirometria, teste cardiopulmonar, VO2 máximo, calorimetria indireta, bioimpedância, cardiologia pediátrica, São José dos Campos" name="keywords">
-    <link rel="canonical" href="https://www.fernandavieira.med.br/">
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
+.brand{display:block;line-height:0}
+.brand img{height:42px;width:auto}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:15px;font-weight:500}
+.nav ul a{text-decoration:none;color:var(--ink-soft)}
+.nav ul a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--blue);color:#fff;text-decoration:none;font-weight:600;padding:15px 26px;border-radius:999px;font-size:16px;transition:background .2s}
+.btn:hover{background:var(--blue-deep)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.small{padding:10px 18px;font-size:14px}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn.ghost:hover{border-color:var(--blue);color:var(--blue);background:transparent}
 
-    <!-- Open Graph / Social -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.fernandavieira.med.br/">
-    <meta property="og:title" content="Dra. Fernanda Vieira | Medicina do Esporte e Cardiologia Pediátrica">
-    <meta property="og:description" content="Atendimento personalizado em Medicina do Esporte: teste cardiopulmonar, calorimetria indireta, bioimpedância e mais, em São José dos Campos.">
-    <meta property="og:image" content="https://www.fernandavieira.med.br/assets/img/profile-img.jpg">
-    <meta property="og:locale" content="pt_BR">
-    <meta name="twitter:card" content="summary_large_image">
+/* hero */
+.hero{padding:0;position:relative;overflow:hidden;min-height:max(calc(100svh - 72px),640px);display:flex;align-items:flex-end;background:var(--ink);color:#fff}
+.hero-bg,.hero-bg img{position:absolute;inset:0;width:100%;height:100%}
+.hero-bg img{object-fit:cover;object-position:62% 22%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,26,77,0) 30%,rgba(30,26,77,.55) 58%,rgba(30,26,77,.92) 100%),linear-gradient(90deg,rgba(30,26,77,.6) 0%,rgba(30,26,77,.25) 40%,rgba(30,26,77,0) 60%);pointer-events:none}
+.hero-text{position:relative;z-index:3;width:100%;padding-top:48px;padding-bottom:56px}
+.hero h1{font-size:clamp(40px,6vw,76px);font-weight:800;max-width:13ch;margin-bottom:22px;color:#fff}
+.hero .lead{margin-bottom:30px;color:var(--on-ink);max-width:52ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:28px}
+.hero .btn.ghost{color:#fff;border-color:rgba(255,255,255,.5)}
+.hero .btn.ghost:hover{border-color:#fff;color:#fff}
+.cred{font-size:14px;color:var(--on-ink);line-height:1.5}
+.cred b{color:#fff;font-weight:600}
+.ecg{display:block;width:100%;max-width:460px;height:40px;margin-bottom:20px;opacity:.75;pointer-events:none}
+.ecg{width:100%}
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+/* para quem */
+.who{background:var(--ice)}
+.who-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:56px}
+.mosaic{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:170px;gap:12px;margin-bottom:56px}
+.mosaic figure{position:relative;overflow:hidden;border-radius:14px}
+.mosaic img{width:100%;height:100%;object-fit:cover}
+.mosaic figcaption{position:absolute;left:12px;bottom:12px;background:#fff;font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px}
+.m1{grid-column:span 3;grid-row:span 2}.m2{grid-column:span 3}.m3{grid-column:span 3}
+.m5{grid-column:span 3}.m6{grid-column:span 3}
+.who-list{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 48px;list-style:none}
+.who-list li{border-top:1px solid rgba(30,26,77,.22);padding-top:18px}
+.who-list h3{margin-bottom:8px}
+.who-list p{color:var(--ink-soft);font-size:16px}
+.not{margin-top:56px;padding:24px 28px;border:1px solid var(--line);background:#fff;border-radius:14px;max-width:760px}
+.not strong{display:block;margin-bottom:4px;color:var(--purple)}
+.not p{color:var(--ink-soft);font-size:16px}
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Raleway:400,500,500i,600,700&display=swap"
-          rel="stylesheet">
+/* como funciona */
+.steps-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;margin-top:56px}
+.step-photos{display:grid;gap:12px;grid-template-columns:1fr 1fr;align-content:start;position:sticky;top:100px}
+.step-photos img{border-radius:14px;width:100%;height:auto;object-fit:cover}
+.step-photos .big{grid-column:span 2;aspect-ratio:3/2}
+.step-photos .sq{aspect-ratio:1/1}
+ol.steps{list-style:none;counter-reset:s}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:56px 1fr;gap:20px;padding:26px 0;border-bottom:1px solid var(--line)}
+ol.steps li:first-child{padding-top:0}
+ol.steps li::before{content:counter(s);font-family:var(--display);font-stretch:112%;font-weight:800;font-size:34px;color:var(--purple);line-height:1}
+ol.steps h3{margin-bottom:6px}
+ol.steps p{color:var(--ink-soft);font-size:16px}
+.duration{margin-top:28px;font-weight:600}
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+/* entregáveis */
+.deliver{background:var(--ink);color:#fff}
+.deliver .lead{color:var(--on-ink)}
+.deliver-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-top:56px}
+.deliver-list{list-style:none;display:grid;gap:28px}
+.deliver-list li{display:grid;grid-template-columns:28px 1fr;gap:16px}
+.deliver-list svg{width:26px;height:26px;color:var(--z2);margin-top:2px}
+.deliver-list h3{margin-bottom:4px}
+.deliver-list p{color:var(--on-ink);font-size:16px}
+.zones{background:#fff;color:var(--ink);border-radius:18px;padding:32px}
+.zones h3{margin-bottom:6px}
+.zones .sub{font-size:14px;color:var(--ink-soft);margin-bottom:24px}
+.zone{display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:center;margin-bottom:10px}
+.zone b{font-family:var(--display);font-stretch:112%;font-size:15px}
+.bar{height:40px;border-radius:8px;display:flex;align-items:center;justify-content:space-between;padding:0 14px;gap:12px;font-size:14px;font-weight:600;color:var(--ink)}
+.bar span:last-child{font-weight:500;opacity:.85}
+.bar{width:var(--w);transition:width 1.4s cubic-bezier(.22,.8,.3,1),opacity .6s;overflow:hidden;white-space:nowrap}
+.zone:nth-child(3) .bar{background:var(--z1);--w:60%}
+.zone:nth-child(4) .bar{background:var(--z2);--w:70%;transition-delay:.25s}
+.zone:nth-child(5) .bar{background:var(--z3);--w:80%;transition-delay:.5s}
+.zone:nth-child(6) .bar{background:var(--z4);--w:90%;color:#fff;transition-delay:.75s}
+.zone:nth-child(7) .bar{background:var(--z5);--w:100%;color:#fff;transition-delay:1s}
+.zones.js-wait .bar{width:0;opacity:0}
+.zones .note{font-size:13px;color:var(--ink-soft);margin-top:18px}
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-   	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTGEVSSJMR"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+/* valores */
+.price-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:28px;margin-top:56px;align-items:stretch}
+.package{background:var(--blue);color:#fff;border-radius:22px;padding:40px;display:flex;flex-direction:column}
+.package h3{font-size:28px;margin-bottom:10px}
+.package .desc{color:#fff;margin-bottom:24px}
+.package ul{list-style:none;display:grid;gap:10px;margin-bottom:32px}
+.package .btn{margin-top:auto}
+.package li{display:flex;gap:10px;align-items:flex-start}
+.package li svg{width:20px;height:20px;flex:none;margin-top:3px}
+.package .price{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:56px;line-height:1;margin-top:auto}
+.package .compare{color:#fff;font-size:15px;margin:8px 0 28px}
+.package .btn{background:#fff;color:var(--blue-deep);align-self:flex-start}
+.package .btn:hover{background:var(--ice)}
+.singles{border:1.5px solid var(--line);border-radius:22px;padding:12px 32px}
+.single{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:24px 0;border-bottom:1px solid var(--line)}
+.single:last-of-type{border-bottom:0}
+.single h3{font-size:19px;margin-bottom:4px}
+.single p{font-size:15px;color:var(--ink-soft)}
+.single{display:block}
+.single .row{display:block;width:100%}
+.btn.mini{padding:8px 16px;font-size:14px;margin-top:14px}
+.btn.mini svg{width:16px;height:16px}
+.single .v{font-family:var(--display);font-stretch:112%;font-weight:700;font-size:26px;white-space:nowrap}
 
-	  gtag('config', 'G-RTGEVSSJMR');
-	</script>
+/* tele */
+.tele{background:var(--ice)}
+.tele-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.tele img{border-radius:18px}
+.tele .lead{margin:20px 0 28px}
+.tele ul{list-style:none;display:grid;gap:10px;margin-bottom:32px}
+.tele li{padding-left:22px;position:relative}
+.tele li::before{content:"";position:absolute;left:0;top:11px;width:10px;height:2px;background:var(--blue)}
 
-    <!-- Structured data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Physician",
-      "name": "Dra. Fernanda Helena Vieira",
-      "image": "https://www.fernandavieira.med.br/assets/img/profile-img.jpg",
-      "url": "https://www.fernandavieira.med.br/",
-      "email": "contato@fernandavieira.med.br",
-      "telephone": "+5512991674600",
-      "medicalSpecialty": ["Medicina do Esporte e do Exercício", "Cardiologia Pediátrica"],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "R. Fernão Dias, 196 - Jardim Nova América",
-        "addressLocality": "São José dos Campos",
-        "addressRegion": "SP",
-        "postalCode": "12242-580",
-        "addressCountry": "BR"
-      },
-      "sameAs": ["https://instagram.com/dra_fervieira"]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "O que é um médico do esporte?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Um médico do exercício e do esporte atua de forma ampla, tendo como norte a fisiologia do exercício, a prevenção de problemas de saúde e a melhoria de desempenho de pacientes envolvidos em práticas esportivas profissionais e amadoras. É um profissional de formação clínica com conhecimento em diferentes áreas da medicina, como cardiologia, ortopedia, imunologia, endocrinologia, nutrologia e medicina do sono."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "O que é ergoespirometria (teste de esforço cardiopulmonar)?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "É um teste de esforço máximo que fornece informações cardiopulmonares e metabólicas durante o exercício físico, incluindo eletrocardiograma e pressão arterial no esforço, limiares metabólicos, gasto calórico e consumo máximo de oxigênio (VO2). É considerado indispensável para atletas de alta performance e muito indicado para quem quer iniciar um programa de exercícios."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Todos podem fazer o teste de esforço cardiopulmonar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "O teste não é indicado para pacientes com infarto recente (3 a 5 dias), doenças febris ativas, arritmias não controladas com repercussão hemodinâmica, miocardite aguda ou pericardite, entre outros. Na consulta, a Dra. Fernanda avalia se o exame é adequado para o seu caso."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "O que é calorimetria indireta?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "É um exame não invasivo que mede a taxa metabólica basal — quantas calorias o corpo gasta em repouso — a partir do consumo de oxigênio e da produção de gás carbônico. Permite ajustar a dieta ao metabolismo real do paciente, sendo útil para emagrecimento, ganho de massa muscular e performance."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "O que é bioimpedância?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "É um exame de avaliação da composição corporal que estima massa magra, gordura corporal e água corporal total, fornecendo informações mais precisas sobre o estado nutricional do que a balança comum."
-          }
-        }
-      ]
-    }
-    </script>
+/* sobre */
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:start}
+.about-photo{position:relative}
+.about-photo img{border-radius:18px;aspect-ratio:3/4;object-fit:cover;width:100%}
+.about-photo figcaption{font-size:14px;color:var(--ink-soft);margin-top:12px}
+.about p.lead{margin:24px 0 40px}
+.timeline{list-style:none;border-left:2px solid var(--line);margin-left:6px}
+.timeline li{position:relative;padding:0 0 26px 28px}
+.timeline li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:#fff;border:2.5px solid var(--purple)}
+.timeline li:last-child{padding-bottom:0}
+.timeline h3{font-size:18px;margin-bottom:2px}
+.timeline p{font-size:15px;color:var(--ink-soft)}
+.ig{display:inline-flex;align-items:center;gap:8px;margin-top:36px;font-weight:600;color:var(--blue);text-decoration:none}
+.ig svg{width:20px;height:20px}
+.ig:hover{text-decoration:underline}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:24px 40px 24px 0;font-weight:600;font-size:18px;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:6px;top:50%;width:12px;height:12px;border-right:2px solid var(--blue);border-bottom:2px solid var(--blue);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+details p{padding:0 0 24px;color:var(--ink-soft);max-width:62ch}
+
+/* local */
+.local{background:var(--ice)}
+.local-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:56px;align-items:center}
+.local address{font-style:normal;font-size:20px;margin:24px 0 32px;line-height:1.5}
+.local address strong{font-family:var(--display);font-stretch:112%}
+.local .contact{margin-top:28px;padding-top:20px;border-top:1px solid var(--line);font-size:15px;color:var(--ink-soft)}
+.local .contact a{color:var(--ink);font-weight:600}
+.local-media{display:block;overflow:hidden;border-radius:18px}
+.local-media img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:62% center;transform:scale(1.15);transform-origin:62% 55%}
+.map{border-radius:18px;overflow:hidden;aspect-ratio:4/5;background:var(--line)}
+
+.map iframe{width:100%;height:100%;border:0}
+
+/* cta final */
+.final{text-align:center;padding:112px 0}
+.final h2{margin:0 auto 20px;max-width:20ch}
+.final .lead{margin:0 auto 36px}
+
+footer{background:var(--ink);color:var(--on-ink);font-size:14px;padding:48px 0 calc(48px + env(safe-area-inset-bottom,0px))}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+footer strong{color:#fff;font-weight:600;display:block;margin-bottom:6px}
+.foot-logo{height:40px;width:auto;margin-bottom:16px}
+footer a{color:#fff}
+
+.wa-float{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:50;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(30,26,77,.25)}
+.wa-float svg{width:32px;height:32px;color:#fff}
+
+@media (max-width:960px){
+  section{padding:80px 0}
+  .nav ul{display:none}
+  .brand img{height:34px}
+  .hero-grid,.who-head,.steps-grid,.deliver-grid,.price-grid,.tele-grid,.about-grid,.faq-grid,.local-grid{grid-template-columns:1fr;gap:40px}
+  .hero{display:block;min-height:0}
+  .hero::after{display:none}
+  .hero-bg{display:block;height:150vw;top:-30vw;bottom:auto}
+  .hero-bg img{object-position:50% 0}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,26,77,0) 42%,rgba(30,26,77,.75) 70%,var(--ink) 100%)}
+  .hero-text{padding-top:46vw;padding-bottom:24px}
+  .hero .ecg{height:26px;margin-bottom:8px}
+  .hero h1{font-size:30px;margin-bottom:10px}
+  .hero .lead{font-size:14px;line-height:1.45;margin-bottom:16px}
+  .hero-actions{flex-wrap:wrap;gap:8px;margin-bottom:12px}
+  .hide-m{display:none}.cap-m{text-transform:capitalize}
+  .hero-actions .btn{padding:11px 12px;font-size:13px;gap:6px;white-space:nowrap}
+  .hero-actions .btn svg{width:16px;height:16px}
+  .cred{font-size:12px}
+  .step-photos{position:static}
+  .who-list{grid-template-columns:1fr 1fr}
+  .mosaic{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+  .m1{grid-column:span 2;grid-row:span 2}.m2,.m5,.m6{grid-column:span 2}.m3{grid-column:span 2}
+  .about-photo{max-width:440px}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .who-list{grid-template-columns:1fr}
+  .package,.zones{padding:28px 22px}
+  .singles{padding:4px 22px}
+  .single .row{flex-direction:column;gap:6px}
+  .package .price{font-size:46px}
+  .zone{grid-template-columns:36px 1fr;gap:10px}
+  .bar{padding:0 10px;font-size:13px}
+  .zone:nth-child(3) .bar{--w:76%}.zone:nth-child(4) .bar{--w:82%}.zone:nth-child(5) .bar{--w:88%}.zone:nth-child(6) .bar{--w:94%}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  
+  .bar{transition:none}
+}
+
+.ecg-inline{display:block;width:100%;height:70px;margin-bottom:28px}
+/* borda girando */
+@property --a{syntax:"<angle>";inherits:false;initial-value:0deg}
+.btn.spin{position:relative;isolation:isolate;background:transparent}
+.btn.spin::after{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--blue);z-index:-1;transition:background .2s}
+.btn.spin::before{content:"";position:absolute;inset:-3px;border-radius:inherit;z-index:-2;background:conic-gradient(from var(--a),rgba(32,159,225,.15) 0 55%,#81C5EE 80%,#209FE1 100%);animation:ring 2.4s linear infinite}
+.btn.spin:hover{background:transparent}
+.btn.spin:hover::after{background:var(--blue-deep)}
+.package .btn.spin{background:transparent}
+.package .btn.spin::after{background:#fff}
+.package .btn.spin:hover::after{background:var(--ice)}
+.package .btn.spin::before{background:conic-gradient(from var(--a),rgba(255,255,255,.15) 0 55%,#81C5EE 80%,#fff 100%)}
+@keyframes ring{to{--a:360deg}}
+/* mosaico */
+.mosaic.js-wait figure{opacity:0;transform:translateX(-48px)}
+.mosaic figure{transition:opacity .8s ease,transform .8s cubic-bezier(.22,.8,.3,1)}
+.mosaic figure:nth-child(2){transition-delay:.25s}.mosaic figure:nth-child(3){transition-delay:.5s}.mosaic figure:nth-child(4){transition-delay:.75s}.mosaic figure:nth-child(5){transition-delay:1s}
+/* fade títulos */
+.fade{opacity:0;transform:translateY(14px);transition:opacity 1s ease,transform 1s cubic-bezier(.22,.8,.3,1)}
+.fade.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .btn.spin::before{animation:none}
+  .mosaic figure{transition:none}
+  .mosaic.js-wait figure{opacity:1;transform:none}
+}
+.cap-m{display:none}
+@media (max-width:960px){.cap-m{display:inline}}
+</style>
 </head>
-
 <body>
 
-<!-- ======= Mobile nav toggle button ======= -->
-<!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-<!-- ======= Header ======= -->
-<header id="header" class="d-flex flex-column justify-content-center">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.08c-.24.68-1.42 1.32-1.95 1.36-.5.05-.97.24-3.28-.68-2.78-1.1-4.54-3.95-4.68-4.13-.13-.18-1.12-1.49-1.12-2.84s.71-2.02.96-2.29c.25-.28.55-.35.73-.35l.53.01c.17.01.4-.06.62.47.24.55.8 1.92.87 2.06.07.14.12.3.02.48-.09.18-.14.3-.28.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.28.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.28.14.44.12.6-.07.16-.18.69-.8.87-1.08.18-.28.37-.23.62-.14.25.09 1.6.75 1.88.89.28.14.46.21.53.32.07.12.07.68-.17 1.36Z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+</svg>
 
-    <nav id="navbar" class="navbar nav-menu">
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio"><img src="assets/img/logo_fernanda_horiz.png" width="427" height="111" alt="Dra. Fernanda Vieira, Médica do Exercício e do Esporte"></a>
+    <ul>
+      <li><a href="#para-quem">Para quem é</a></li>
+      <li><a href="#avaliacao">Avaliação</a></li>
+      <li><a href="#valores">Serviços</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#local">Local</a></li>
+    </ul>
+    <a class="btn small" href="https://wa.me/5512991674600?text=Ol%C3%A1%2C%20Dra.%20Fernanda%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar</a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero">
+  <picture class="hero-bg">
+    <source media="(min-width:900px)" srcset="assets/img/site/hero-desktop.webp">
+    <img src="assets/img/site/hero-mobile.webp" alt="Dra. Fernanda Vieira segurando o estetoscópio">
+  </picture>
+  <div class="wrap hero-text">
+      <canvas class="ecg" aria-hidden="true"></canvas>
+      <h1>Treine com os números do seu corpo.</h1>
+      <p class="lead">Avaliação completa em Medicina do Exercício e do Esporte para quem quer começar a se exercitar com segurança e para atletas que buscam desempenho. Metabolismo, coração e zonas de treino medidos em uma única consulta.</p>
+      <div class="hero-actions">
+        <a class="btn spin" href="https://wa.me/5512991674600?text=Ol%C3%A1%2C%20Dra.%20Fernanda%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agendar pelo WhatsApp</a>
+        <a class="btn ghost" href="#avaliacao"><span><span class="hide-m">Ver como</span><span class="cap-m">Como</span> funciona</span></a>
+      </div>
+      <p class="cred"><b>Dra. Fernanda Helena da Silva Vieira</b><br>CRM 145520/SP · RQE 104221 Medicina do Exercício e do Esporte</p>
+  </div>
+</section>
+
+<section class="who" id="para-quem">
+  <div class="wrap">
+    <div class="who-head">
+      <h2>Para quem se exercita ou quer começar.</h2>
+      <p class="lead">Você não precisa ser atleta. Precisa querer se mexer mais, entender seu corpo e treinar com orientação médica.</p>
+    </div>
+    <div class="mosaic js-wait">
+      <figure class="m1"><img src="assets/img/site/who-corrida.webp" alt="Corredores amadores em prova de rua" loading="lazy"><figcaption>Corrida</figcaption></figure>
+      <figure class="m2"><img src="assets/img/site/who-triathlon.webp" alt="Triatletas pedalando" loading="lazy" style="object-position:center 30%"><figcaption>Triathlon</figcaption></figure>
+      <figure class="m3"><img src="assets/img/site/who-ciclismo.webp" alt="Grupo de ciclistas amadores" loading="lazy"><figcaption>Ciclismo</figcaption></figure>
+      <figure class="m5"><img src="assets/img/site/who-hyrox.webp" alt="Atletas em prova de Hyrox" loading="lazy"><figcaption>Hyrox e funcional</figcaption></figure>
+      <figure class="m6"><img src="assets/img/site/who-musculacao.webp" alt="Treino de força com halteres" loading="lazy" style="object-position:center 35%"><figcaption>Musculação</figcaption></figure>
+    </div>
+    <ul class="who-list">
+      <li><h3>Quem vai começar</h3><p>Saber se está tudo bem antes de iniciar e por onde começar com segurança.</p></li>
+      <li><h3>Atletas amadores</h3><p>Corrida, ciclismo, triathlon, Hyrox, musculação. Treinar na intensidade certa para evoluir.</p></li>
+      <li><h3>Quem quer mudar hábitos</h3><p>Atividade física e rotina ajustadas ao seu metabolismo, com metas que fazem sentido para você.</p></li>
+    </ul>
+    <div class="not">
+      <strong>Importante antes de agendar</strong>
+      <p>Não faço acompanhamento de doenças cardíacas, exceto quando estão relacionadas ao esporte. Nesses casos, o ideal é seguir com um cardiologista clínico.</p>
+    </div>
+  </div>
+</section>
+
+<section id="avaliacao">
+  <div class="wrap">
+    <h2>Como funciona a avaliação completa.</h2>
+    <div class="steps-grid">
+      <div class="step-photos">
+        <img class="big" src="assets/img/site/step-esteira.webp" alt="Paciente fazendo teste de esforço cardiopulmonar na esteira" loading="lazy">
+        <img class="sq" src="assets/img/site/step-calorimetria.webp" alt="Paciente fazendo calorimetria indireta em repouso" loading="lazy">
+        <img class="sq" src="assets/img/site/step-bioimpedancia.webp" alt="Paciente fazendo bioimpedância" loading="lazy">
+      </div>
+      <div>
+        <ol class="steps">
+          <li><div><h3>Consulta clínica</h3><p>Conversa sobre sua história, rotina, treino, sono e alimentação. Avaliação do corpo como um todo, com pedido de exames complementares quando necessário.</p></div></li>
+          <li><div><h3>Bioimpedância</h3><p>Composição corporal: massa muscular, gordura e água.</p></div></li>
+          <li><div><h3>Eletrocardiograma</h3><p>Avaliação do ritmo e da atividade elétrica do coração em repouso.</p></div></li>
+          <li><div><h3>Calorimetria indireta</h3><p>Mede quanta energia seu corpo gasta em repouso, a partir da respiração. Um número real do seu metabolismo, sem depender de fórmulas.</p></div></li>
+          <li><div><h3>Teste de esforço cardiopulmonar</h3><p>Na esteira, com máscara e monitoramento do coração. Mostra como seu corpo responde ao esforço e define suas zonas de treino.</p></div></li>
+          <li><div><h3>Devolutiva</h3><p>Explico cada resultado e o que muda no seu treino e nos seus hábitos a partir dele.</p></div></li>
+        </ol>
+        <p class="duration">Com todos os exames, a avaliação leva de 1h30 a 2h.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="deliver">
+  <div class="wrap">
+    <h2>O que você leva para casa.</h2>
+    <p class="lead" style="margin-top:20px">Resultados que você entende e usa no treino da semana seguinte.</p>
+    <div class="deliver-grid">
+      <ul class="deliver-list">
+        <li><svg><use href="#check"/></svg><div><h3>Como está seu metabolismo</h3><p>Seu gasto de energia em repouso e o que ele indica.</p></div></li>
+        <li><svg><use href="#check"/></svg><div><h3>Zonas de treinamento</h3><p>As faixas de frequência cardíaca certas para você, calculadas no teste.</p></div></li>
+        <li><svg><use href="#check"/></svg><div><h3>Gasto de energia em cada zona</h3><p>Quanto você consome em cada faixa de frequência cardíaca.</p></div></li>
+        <li><svg><use href="#check"/></svg><div><h3>Sugestões de melhoria</h3><p>Orientações práticas para treino, rotina e hábitos.</p></div></li>
+      </ul>
+      <div class="zones js-wait" id="zonas" aria-label="Exemplo ilustrativo de zonas de treino">
+        <h3>Suas zonas de treino</h3>
+        <p class="sub">Exemplo ilustrativo. Os valores reais saem do seu teste.</p>
+        <div class="zone"><b>Z1</b><div class="bar"><span>Recuperação</span><span>até 120</span></div></div>
+        <div class="zone"><b>Z2</b><div class="bar"><span>Base aeróbica</span><span>121 a 138</span></div></div>
+        <div class="zone"><b>Z3</b><div class="bar"><span>Moderado</span><span>139 a 152</span></div></div>
+        <div class="zone"><b>Z4</b><div class="bar"><span>Limiar</span><span>153 a 167</span></div></div>
+        <div class="zone"><b>Z5</b><div class="bar"><span>Máximo</span><span>168+</span></div></div>
+        <p class="note">Cada zona vem com o gasto de energia correspondente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="valores">
+  <div class="wrap">
+    <canvas class="ecg-inline" aria-hidden="true"></canvas>
+    <h2>Serviços.</h2>
+    <div class="price-grid">
+      <div class="package">
+        <h3>Avaliação completa</h3>
+        <p class="desc">Consulta e todos os exames no mesmo dia.</p>
         <ul>
-            <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-            <li><a href="#about" class="nav-link about-link"><i class="bx bx-user"></i> <span>Quem sou</span></a></li>
-            <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Currículo</span></a>
-            </li>
-            <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Serviços</span></a>
-            </li>
-            <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contato</span></a>
-            </li>
+          <li><svg><use href="#check"/></svg>Consulta médica completa</li>
+          <li><svg><use href="#check"/></svg>Teste de esforço cardiopulmonar</li>
+          <li><svg><use href="#check"/></svg>Calorimetria indireta</li>
+          <li><svg><use href="#check"/></svg>Bioimpedância</li>
+          <li><svg><use href="#check"/></svg>Eletrocardiograma</li>
         </ul>
-    </nav><!-- .nav-menu -->
-
-</header><!-- End Header -->
-
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-        <h1><img src="assets/img/logo_fernanda_horiz.png" class="img-fluid logo-horiz-princ" alt="Dra. Fernanda Vieira - Medicina do Esporte e do Exercício em São José dos Campos"></h1>
-        <p class="ms-4">Sou <span class="typed"
-                                  data-typed-items="Médica do Esporte, Qualidade de vida, Performance, Cardiologista Pediátrica"></span>
-        </p>
-        <div class="hero-actions ms-4 mt-4">
-            <a href="https://api.whatsapp.com/send?phone=5512991674600" target="_blank" rel="noopener" class="btn-agendar"><i class="bx bxl-whatsapp"></i> Agende sua consulta</a>
-            <a href="https://instagram.com/dra_fervieira" class="social-icon" target="_blank" rel="noopener" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
-        </div>
+        <a class="btn spin" href="https://wa.me/5512991674600?text=Ol%C3%A1%2C%20Dra.%20Fernanda%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agendar avaliação completa</a>
+      </div>
+      <div class="singles">
+        <div class="single"><div class="row"><div><h3>Consulta médica</h3><p>Presencial ou por telemedicina</p></div></div><a class="btn mini" href="https://wa.me/5512991674600?text=Ol%C3%A1%2C%20Dra.%20Fernanda%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20m%C3%A9dica." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agendar</a></div>
+        <div class="single"><div class="row"><div><h3>Teste de esforço cardiopulmonar</h3><p>Ergoespirometria na esteira</p></div></div><a class="btn mini" href="https://wa.me/5512991674600?text=Ol%C3%A1%2C%20Dra.%20Fernanda%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20o%20teste%20de%20esfor%C3%A7o%20cardiopulmonar." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agendar</a></div>
+        <div class="single"><div class="row"><div><h3>Calorimetria indireta</h3><p>Gasto de energia em repouso</p></div></div><a class="btn mini" href="https://wa.me/5512991674600?text=Ol%C3%A1%2C%20Dra.%20Fernanda%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20a%20calorimetria%20indireta." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agendar</a></div>
+      </div>
     </div>
-</section><!-- End Hero -->
+  </div>
+</section>
 
-<main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-        <div class="container aos-init aos-animate" data-aos="fade-up">
-
-            <div class="section-title">
-                <h2>Quem sou</h2>
-                <p>Uma trajetória dedicada à saúde, ao esporte e ao cuidado com pessoas.</p>
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-lg-4">
-                    <img src="assets/img/profile-img.jpg" class="img-fluid about-img" alt="Foto da Dra. Fernanda Vieira">
-                </div>
-                <div class="col-lg-8 pt-4 pt-lg-0 content">
-
-                    <h3>Dra. Fernanda Helena Vieira</h3>
-                    <p class="about-subtitle">Médica do Esporte e do Exercício &middot; Cardiologista Pediátrica</p>
-
-                    <p>Dra. Fernanda Vieira fez sua graduação em medicina pela Universidade de Santo
-                        Amaro em 2010. Sempre apaixonada por crianças, optou por fazer residência em pediatria no
-                        Hospital Santa Marcelina, também em São Paulo (2013). Na faculdade participou de liga de
-                        cardiologia, ajudou a escrever artigos e livros, e acabou, no fim da residência de pediatria,
-                        por se tornar cardiologista de pequenos corações. Especializou-se em
-                        <strong>Cardiologia Pediátrica</strong> pelo Instituto Dante Pazzanese de Cardiologia (2015).</p>
-                    <p>Sempre praticou atividades físicas diversas desde a infância, até que em um
-                        determinado momento se apaixonou pela corrida. A paixão pela corrida, pelo estilo de vida mais
-                        saudável e o atendimento dos atletas mirins despertou a vontade de ampliar os conhecimentos
-                        dentro do esporte, levando-a a complementar sua formação acadêmica em
-                        <strong>Medicina do Esporte e do Exercício</strong> pela CEFIT (2020), sendo titulada pela
-                        <strong>Sociedade Brasileira de Medicina do Exercício e do Esporte</strong> (2022).</p>
-
-                </div>
-            </div>
-
-        </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-        <div class="container aos-init aos-animate" data-aos="fade-up">
-
-            <div class="section-title">
-                <h2>Atendimento personalizado</h2>
-                <p>Qualidade de vida, estilo de vida saudável, sono adequado e prevenção de doenças norteiam o
-                    atendimento oferecido pela Dra. Fernanda.<br><br>
-                    Não importa se seu objetivo é tratar doenças, perder peso, conquistar um estilo de vida saudável ou
-                    melhorar o rendimento em competições: seu atendimento será completamente individualizado e
-                    elaborado de acordo com as suas necessidades.</p>
-            </div>
-        </div>
-    </section><!-- End Facts Section -->
-
-    <!-- ======= Quote Section ======= -->
-    <section id="skills" class="skills section-bg">
-        <div class="container aos-init aos-animate" data-aos="fade-up">
-
-            <blockquote class="big-quote">
-                <p>“A falta de atividade física destrói a boa condição de qualquer ser humano, enquanto o movimento
-                    e o exercício físico metódico o salva e o preserva.”</p>
-                <footer>Hipócrates — Pai da Medicina (460 a.C. – 370 a.C.)</footer>
-            </blockquote>
-
-        </div>
-    </section><!-- End Quote Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-        <div class="container aos-init aos-animate" data-aos="fade-up">
-
-            <div class="section-title">
-                <h2>Medicina do Esporte</h2>
-                <p>Especialistas em medicina esportiva atuam na promoção de saúde, bem-estar, melhoria de desempenho e
-                    recuperação de atletas profissionais e amadores. Embora o Brasil ainda seja um país de população
-                    bastante sedentária — pelo menos 62% dos adultos não praticam qualquer atividade física —, nos
-                    últimos anos cresceu o número de interessados em deixar esse estilo de vida inativo e iniciar algum
-                    exercício ou prática esportiva.</p>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3 class="resume-title">Afinal, o que é um médico do esporte?</h3>
-                    <div class="resume-item pb-0">
-                        <p>Um médico do exercício e do esporte atua de forma ampla, tendo como norte a fisiologia do
-                            exercício, a prevenção de problemas de saúde e a melhoria de desempenho de pacientes
-                            envolvidos em práticas esportivas competitivas profissionais e não competitivas amadoras.
-                            Trata-se de profissional de formação clínica com conhecimento em diferentes áreas da
-                            medicina, como a cardiologia, ortopedia, imunologia, endocrinologia, nutrologia e até mesmo
-                            medicina do sono.</p>
-                        <p>Esse especialista faz avaliações de saúde que vão da etapa anterior à prática do exercício
-                            até cuidados de saúde pós-exercício físico, suprindo demandas recorrentes de praticantes de
-                            atividades físicas comuns e atletas profissionais de alto rendimento. Com o avanço do setor,
-                            técnicas cada vez mais inovadoras auxiliam o médico do exercício e do esporte na preparação
-                            dos atletas, como o uso de análises laboratoriais para individualização das cargas de treino
-                            ou períodos de descanso com o intuito de prevenir lesões musculares.</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="resume-title">O médico do esporte pode ainda: </h3>
-                    <div class="resume-item">
-                        <ul>
-                            <li>Requisitar diversos exames clínicos e laboratoriais</li>
-                            <li>Fazer análise de desempenho físico</li>
-                            <li>Propor programas de exercícios e dietas com finalidades específicas juntamente com uma
-                                equipe multidisciplinar ( nutricionista, educador físico e fisioterapia)
-                            </li>
-                            <li>Acompanhamento e orientação sobre dopagem a atletas de alta performance</li>
-                        </ul>
-                    </div>
-                    <div class="resume-item">
-                        <ul>
-                            <li>Coordenar equipes de saúde esportiva</li>
-                            <li>Pacientes portadores de doenças crônicas podem procurar um médico do exercício e do
-                                esporte para auxiliá-los na prática de atividades físicas que melhorem sua condição de
-                                saúde e deem mais qualidade de vida
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-        <div class="container aos-init aos-animate" data-aos="fade-up">
-
-            <div class="section-title">
-                <h2>Serviços</h2>
-                <p>Avaliação completa para a sua saúde</p>
-            </div>
-
-            <div class="row">
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon-box iconbox-blue">
-                        <div class="icon">
-                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                            </svg>
-                            <i class="bx bx-wind"></i>
-                        </div>
-                        <h4>Calorimetria indireta - avaliação da taxa metabólica basal (TMB)</h4>
-                        <p>Exame não invasivo que mede quantas calorias o seu corpo gasta em repouso — a base para um planejamento nutricional preciso.</p>
-                        <div class="collapse service-details" id="details-calorimetria">
-                            <p>A calorimetria indireta determina as necessidades nutricionais e a taxa de utilização dos substratos energéticos a partir do consumo de oxigênio e da produção de gás carbônico, obtidos pela análise do ar inspirado e expirado pelos pulmões.</p>
-                            <p>É especialmente útil para quem busca emagrecimento, ganho de massa muscular ou melhora de performance, pois permite ajustar a dieta ao seu metabolismo real, e não a estimativas.</p>
-                        </div>
-                        <button class="btn-saiba-mais" type="button" data-bs-toggle="collapse" data-bs-target="#details-calorimetria" aria-expanded="false" aria-controls="details-calorimetria">
-                            <span class="more">Saiba mais <i class="bx bx-chevron-down"></i></span>
-                            <span class="less">Mostrar menos <i class="bx bx-chevron-up"></i></span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="icon-box iconbox-orange">
-                        <div class="icon">
-                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                            </svg>
-                            <i class="bx bx-run"></i>
-                        </div>
-                        <h4>Teste de performance</h4>
-                        <p>Mede seu VO2 máximo e identifica suas zonas de treinamento, ajudando a prescrever o treino ideal para você.</p>
-                        <div class="collapse service-details" id="details-performance">
-                            <p>O VO2 máximo é a nossa capacidade máxima de consumir oxigênio para produzir energia, e é considerado um bom indicador de performance. Com o resultado em mãos, seu preparador físico pode prescrever treinos na intensidade certa para você evoluir com segurança.</p>
-                            <p>O teste pode ser realizado tanto em atletas profissionais de alto rendimento quanto em pessoas sedentárias que desejam iniciar a prática esportiva.</p>
-                        </div>
-                        <button class="btn-saiba-mais" type="button" data-bs-toggle="collapse" data-bs-target="#details-performance" aria-expanded="false" aria-controls="details-performance">
-                            <span class="more">Saiba mais <i class="bx bx-chevron-down"></i></span>
-                            <span class="less">Mostrar menos <i class="bx bx-chevron-up"></i></span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="icon-box iconbox-pink">
-                        <div class="icon">
-                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                            </svg>
-                            <i class="bx bx-body"></i>
-                        </div>
-                        <h4>Bioimpedância</h4>
-                        <p>Avaliação da composição corporal: massa magra, gordura corporal e água corporal total.</p>
-                        <div class="collapse service-details" id="details-bioimpedancia">
-                            <p>A bioimpedância fornece informações muito mais precisas sobre o estado nutricional do que a balança comum: ela mostra quanto do seu peso é músculo, gordura ou água.</p>
-                            <p>Com isso é possível acompanhar a evolução real do corpo ao longo do tratamento — quanto de massa magra você ganhou e quanto de gordura perdeu — e ajustar dieta e treino com objetividade.</p>
-                        </div>
-                        <button class="btn-saiba-mais" type="button" data-bs-toggle="collapse" data-bs-target="#details-bioimpedancia" aria-expanded="false" aria-controls="details-bioimpedancia">
-                            <span class="more">Saiba mais <i class="bx bx-chevron-down"></i></span>
-                            <span class="less">Mostrar menos <i class="bx bx-chevron-up"></i></span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon-box iconbox-yellow">
-                        <div class="icon">
-                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                            </svg>
-                            <i class="bx bx-heart"></i>
-                        </div>
-                        <h4>ECG - eletrocardiograma</h4>
-                        <p>Exame rápido e indolor que registra a atividade elétrica do coração.</p>
-                        <div class="collapse service-details" id="details-ecg">
-                            <p>O eletrocardiograma permite identificar arritmias e outras alterações cardíacas. Faz parte da avaliação pré-participação esportiva e do acompanhamento clínico de rotina, trazendo mais segurança para a prática de exercícios.</p>
-                        </div>
-                        <button class="btn-saiba-mais" type="button" data-bs-toggle="collapse" data-bs-target="#details-ecg" aria-expanded="false" aria-controls="details-ecg">
-                            <span class="more">Saiba mais <i class="bx bx-chevron-down"></i></span>
-                            <span class="less">Mostrar menos <i class="bx bx-chevron-up"></i></span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="icon-box iconbox-orange">
-                        <div class="icon">
-                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                            </svg>
-                            <i class="bx bx-pulse"></i>
-                        </div>
-                        <h4>Teste de esforço cardiopulmonar ou ergoespirometria</h4>
-                        <p>Teste de esforço máximo que fornece informações cardiopulmonares e metabólicas durante o exercício — a avaliação mais completa do seu condicionamento físico.</p>
-                        <div class="collapse service-details" id="details-tcp">
-                            <p>Após o fim do exame você terá os resultados do eletrocardiograma e da pressão arterial no esforço (teste ergométrico), estimativa da função cardíaca durante o exercício, limiares metabólicos para melhora do desempenho, gasto calórico durante as fases do exercício, comportamento da ventilação pulmonar e oxigenação sanguínea no esforço, além da definição do seu condicionamento físico através do consumo máximo de oxigênio (VO2).</p>
-                            <p>É considerado indispensável para atletas de alta performance e muito indicado para a avaliação inicial de indivíduos ativos, esportistas que participam de corridas de rua ou para quem quer iniciar um programa de exercícios físicos de qualquer natureza, pois identifica a faixa ideal para o condicionamento aeróbico.</p>
-                            <p><strong>O TCP é ideal para:</strong></p>
-                            <ul>
-                                <li>Avaliação funcional de doenças cardíacas e pulmonares;</li>
-                                <li>Avaliação seriada no pré e no pós-transplante cardíaco;</li>
-                                <li>Quantificação do risco de pacientes com miocardiopatias (doença do músculo cardíaco);</li>
-                                <li>Programar a reabilitação em pacientes com doença ou insuficiência cardíaca;</li>
-                                <li>Programar o treinamento de atletas;</li>
-                                <li>Diagnóstico diferencial da dispneia (falta de ar).</li>
-                            </ul>
-                            <p><strong>Todos podem fazer o exame?</strong> O teste não é indicado para pacientes com infarto recente (3 a 5 dias), doenças febris ativas, arritmias não controladas com repercussão hemodinâmica, miocardite aguda ou pericardite, entre outros.</p>
-                        </div>
-                        <button class="btn-saiba-mais" type="button" data-bs-toggle="collapse" data-bs-target="#details-tcp" aria-expanded="false" aria-controls="details-tcp">
-                            <span class="more">Saiba mais <i class="bx bx-chevron-down"></i></span>
-                            <span class="less">Mostrar menos <i class="bx bx-chevron-up"></i></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-        <div class="container aos-init aos-animate" data-aos="fade-up">
-
-            <div class="section-title">
-                <h2>Contato</h2>
-                <p>Agende sua consulta ou tire suas dúvidas pelos canais abaixo.</p>
-            </div>
-
-            <div class="row mt-1">
-
-                <div class="col-lg-4">
-                    <div class="info">
-                        <div class="address">
-                            <i class="bi bi-geo-alt"></i>
-                            <h4>Localização</h4>
-                            <p>R. Fernão Dias, 196 - Jardim Nova América, São José dos Campos - SP, 12242-580</p>
-                        </div>
-
-                        <div class="email">
-                            <i class="bi bi-envelope"></i>
-                            <h4>Email:</h4>
-                            <p><a href="mailto:contato@fernandavieira.med.br">contato@fernandavieira.med.br</a></p>
-                        </div>
-
-                        <div class="phone">
-                            <i class="bi bi-phone"></i>
-                            <h4>Telefone - Whatsapp</h4>
-                            <p><a href="https://api.whatsapp.com/send?phone=5512991674600" target="_blank" rel="noopener">+55 12 99167-4600</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-8 mt-4 mt-lg-0 d-flex align-items-stretch">
-                    <iframe src="https://www.google.com/maps?q=R.+Fern%C3%A3o+Dias,+196,+Jardim+Nova+America,+S%C3%A3o+Jos%C3%A9+dos+Campos,+SP&output=embed"
-                            class="contact-map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                            title="Mapa do consultório" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </section><!-- End Contact Section -->
-
-</main><!-- End #main -->
-
-<!-- ======= Footer ======= -->
-<footer id="footer">
-    <div class="container">
-        <h3>Fernanda Vieira</h3>
-        <p>Coloque seu corpo em movimento e supere seus próprios limites. (MM)</p>
-        <div class="social-links">
-            <a href="https://instagram.com/dra_fervieira" class="instagram" target="_blank" rel="noopener" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
-        </div>
-
+<section class="tele">
+  <div class="wrap tele-grid">
+    <img src="assets/img/site/telemedicina.webp" alt="Consulta por telemedicina com análise de eletrocardiograma" loading="lazy">
+    <div>
+      <h2>Também atendo online.</h2>
+      <p class="lead">Para quem mora longe ou tem pouco tempo, a consulta pode ser feita por telemedicina.</p>
+      <ul>
+        <li>Consulta clínica e retornos por vídeo</li>
+        <li>Análise de exames que você já tem</li>
+        <li>Orientação de treino e hábitos</li>
+      </ul>
+      <a class="btn spin" href="https://wa.me/5512991674600?text=Ol%C3%A1%2C%20Dra.%20Fernanda%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agendar consulta online</a>
     </div>
-</footer><!-- End Footer -->
+  </div>
+</section>
 
-<div id="preloader"></div>
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
+<section class="about" id="sobre">
+  <div class="wrap about-grid">
+    <figure class="about-photo">
+      <img src="assets/img/site/sobre-corrida.webp" alt="Dra. Fernanda Vieira correndo em prova de rua" loading="lazy" >
+      <figcaption>Fora do consultório, a Dra. Fernanda também está nas provas de corrida.</figcaption>
+    </figure>
+    <div>
+      <h2>Dra. Fernanda Vieira</h2>
+      <p class="lead">Médica formada em 2010, com formação em cardiologia e especialista em Medicina do Exercício e do Esporte. Olho para o paciente como um todo: coração, metabolismo, rotina e objetivo.</p>
+      <ol class="timeline">
+        <li><h3>Médica do Exercício e do Esporte</h3><p>Título pela SBMEE, Sociedade Brasileira de Medicina do Exercício e do Esporte. RQE 104221.</p></li>
+        <li><h3>Pós-graduação em Ecocardiografia</h3><p>Instituto Lilian Lopes</p></li>
+        <li><h3>Residência em Cardiologia Pediátrica</h3><p>Instituto Dante Pazzanese de Cardiologia</p></li>
+        <li><h3>Residência em Pediatria</h3><p>Hospital Santa Marcelina</p></li>
+        <li><h3>Graduação em Medicina</h3><p>Formada em 2010</p></li>
+      </ol>
+      <a class="ig" href="https://www.instagram.com/dra_fervieira/" target="_blank" rel="noopener"><svg><use href="#ig"/></svg>@dra_fervieira</a>
+    </div>
+  </div>
+</section>
 
-<!-- Vendor JS Files -->
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/typed.js/typed.min.js"></script>
+<section id="duvidas">
+  <div class="wrap faq-grid">
+    <h2>Dúvidas frequentes.</h2>
+    <div>
+      <details><summary>Preciso ser atleta para fazer a avaliação?</summary><p>Não. A maior parte dos pacientes são pessoas que querem começar a se exercitar ou que treinam por saúde. A avaliação mostra onde você está e como evoluir.</p></details>
+      <details><summary>Quanto tempo dura a avaliação completa?</summary><p>De 1h30 a 2h, com consulta e todos os exames no mesmo atendimento.</p></details>
+      <details><summary>Você acompanha doenças do coração?</summary><p>Não faço acompanhamento cardiológico de doenças cardíacas, exceto as relacionadas ao esporte. Se você já tem uma condição cardíaca em tratamento, siga com seu cardiologista.</p></details>
+      <details><summary>Posso fazer só a consulta ou só um exame?</summary><p>Pode. Consulta, teste de esforço cardiopulmonar e calorimetria indireta também são feitos separadamente.</p></details>
+      <details><summary>A consulta online substitui os exames?</summary><p>Não. Os exames são presenciais. Pela telemedicina, faço a consulta clínica, retornos e análise de exames que você já tem.</p></details>
+    </div>
+  </div>
+</section>
 
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
+<section class="local" id="local">
+  <div class="wrap local-grid">
+    <div>
+      <h2>Onde atendo.</h2>
+      <address><strong>Hike Studio</strong><br>Rua Fernão Dias, 196<br>São José dos Campos, SP</address>
+      <a class="btn spin" href="https://wa.me/5512991674600?text=Ol%C3%A1%2C%20Dra.%20Fernanda%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Clique aqui para agendar</a>
+      <p style="margin-top:18px"><a href="https://share.google/F8Kcyvg7sG8CVwAci" target="_blank" rel="noopener" style="color:var(--blue);font-weight:600">Abrir no Google Maps</a></p>
+      <p class="contact">Dúvidas antes de agendar? <a href="mailto:contato@fernandavieira.med.br">contato@fernandavieira.med.br</a></p>
+    </div>
+    <div class="local-media">
+      <img src="assets/img/site/local-hike.webp" alt="Fachada do Hike Studio" loading="lazy">
+    </div>
+  </div>
+</section>
 
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <img class="foot-logo" src="assets/img/site/logo-branco.png" width="427" height="111" alt="Dra. Fernanda Vieira">
+      <strong>Fernanda Helena da Silva Vieira</strong>
+      Médica · CRM 145520/SP · RQE 104221 Medicina do Exercício e do Esporte<br>
+      CNPJ 08.487.728/0001-00
+    </div>
+    <div>
+      Hike Studio · Rua Fernão Dias, 196<br>
+      São José dos Campos, SP<br>
+      <a href="https://wa.me/5512991674600?text=Ol%C3%A1%2C%20Dra.%20Fernanda%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">(12) 99167-4600</a> · <a href="https://www.instagram.com/dra_fervieira/" target="_blank" rel="noopener">@dra_fervieira</a><br>
+      <a href="mailto:contato@fernandavieira.med.br">contato@fernandavieira.med.br</a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function(){
+var RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function io(el,fn,th){if(!('IntersectionObserver' in window)||RM){fn();return;}var o=new IntersectionObserver(function(e){if(e[0].isIntersecting){fn();o.disconnect();}},{threshold:th||.3});o.observe(el);}
+
+/* zonas */
+var z=document.getElementById('zonas');if(z)io(z,function(){z.classList.remove('js-wait')},.35);
+/* mosaico */
+var m=document.querySelector('.mosaic');if(m)io(m,function(){m.classList.remove('js-wait')},.2);
+
+/* títulos com fade */
+document.querySelectorAll('h2').forEach(function(h){
+  if(RM)return;h.classList.add('fade');
+  io(h,function(){h.classList.add('on')},.4);
+});
+
+/* monitor cardíaco */
+function beat(p){ /* p: 0..1 dentro do ciclo, retorna deslocamento -1..1 */
+  function g(x,mu,s,a){return a*Math.exp(-Math.pow((x-mu)/s,2));}
+  return g(p,.22,.025,.12)-g(p,.33,.006,.12)+g(p,.35,.008,1)-g(p,.375,.009,.35)+g(p,.58,.045,.22);
+}
+function monitor(cv,opt){
+  var ctx=cv.getContext('2d'),W,H,ys,head=0,dpr=Math.min(window.devicePixelRatio||1,2);
+  var period=opt.pxs*60/opt.bpm,gap=34,phase=0,last=0,acc=0;
+  function size(){W=cv.clientWidth;H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);ys=new Float32Array(Math.ceil(W)+1).fill(NaN);head=0;}
+  size();window.addEventListener('resize',size);
+  var base=function(){return H*opt.base},amp=function(){return H*opt.amp};
+  if(RM){for(var i=0;i<=W;i++){ys[i]=base()-beat((i%period)/period)*amp();}draw(-1);return;}
+  function step(ts){
+    var dt=last?Math.min((ts-last)/1000,.1):0;last=ts;acc+=opt.pxs*dt;var n=Math.floor(acc);acc-=n;
+    for(var s=0;s<n;s++){
+      var x=Math.floor(head);ys[x]=base()-beat((phase%period)/period)*amp();
+      phase++;head++;if(head>W){head=0;}
+      for(var gg=1;gg<=gap;gg++){var gx=(Math.floor(head)+gg)%(ys.length);ys[gx]=NaN;}
+    }
+    draw(Math.floor(head));requestAnimationFrame(step);
+  }
+  function draw(hd){
+    ctx.clearRect(0,0,W,H);ctx.lineWidth=opt.lw||2.4;ctx.lineJoin='round';ctx.lineCap='butt';
+    var seg=24;for(var k=0;k<seg;k++){
+      ctx.beginPath();var started=false;
+      var from=Math.floor(k*W/seg),to=Math.floor((k+1)*W/seg)+1;
+      for(var x=from;x<=to&&x<ys.length;x++){var y=ys[x];if(isNaN(y)){started=false;continue;}if(!started){ctx.moveTo(x,y);started=true;}else ctx.lineTo(x,y);}
+      var d=hd<0?0:((hd-from+W)%W)/W;ctx.strokeStyle='rgba('+(opt.rgb||'14,116,180')+','+(hd<0?1:Math.max(.12,1-d*.95))+')';ctx.stroke();
+    }
+    if(hd>=0&&!isNaN(ys[hd-1])){var yy=ys[hd-1];ctx.beginPath();ctx.arc(hd-1,yy,opt.r||4,0,7);ctx.fillStyle=opt.dot||'#209FE1';ctx.shadowColor='#81C5EE';ctx.shadowBlur=14;ctx.fill();ctx.shadowBlur=0;}
+  }
+  requestAnimationFrame(step);
+}
+var e1=document.querySelector('.ecg');if(e1)monitor(e1,{pxs:230,bpm:80,base:.7,amp:.6,rgb:'129,197,238',dot:'#FFFFFF',lw:1.6,r:2.6});
+var e2=document.querySelector('.ecg-inline');if(e2)monitor(e2,{pxs:360,bpm:80,base:.7,amp:.62});
+})();
+</script>
 </body>
-
 </html>
